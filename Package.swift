@@ -8,7 +8,7 @@ let package = Package(
 	],
 	    dependencies: [],
     targets: [
-        .target(name: "SQLite", dependencies: ["CSQLite"]),
+        .target(name: "SQLite"),
         .target(name: "CSQLite")
     ]
 )
