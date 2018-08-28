@@ -3,13 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "SQLite",
-    products: [
-		.library(name: "SQLite", targets: ["SQLite"]),
-	],
-    dependencies: [
-	],
+    products: [.library(name: "SQLite", targets: ["SQLite"])],
+    dependencies: [],
     targets: [
-		.target(name: "CSQLite", dependencies: []),
+	.target(name: "CSQLite", dependencies: []),
         .target(name: "SQLite", dependencies: ["CSQLite"])
     ]
 )
