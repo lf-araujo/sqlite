@@ -6,8 +6,9 @@ let package = Package(
     products: [
 		.library(name: "SQLite", targets: ["SQLite"]),
 	],
+	    dependencies: [],
     targets: [
-		.target(name: "CSQLite", dependencies: []),
+	.target(name: "CSQLite"),
         .target(name: "SQLite", dependencies: ["CSQLite"])
     ]
 )
